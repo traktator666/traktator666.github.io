@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>/b/ - Random</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>/b/ - Random</h1>
+    <p>Анонимный текстовый имиджборд</p>
+  </header>
+
+  <div class="container">
+    <!-- Форма нового поста -->
+    <div class="post-form">
+      <form id="postForm">
+        <input type="text" id="name" placeholder="Имя (опционально)">
+        <textarea id="message" placeholder="Сообщение" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <!-- Список постов -->
+    <div class="threads" id="threads"></div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+  
+  <!-- Наш скрипт -->
+  <script src="app.js"></script>
+</body>
+</html>
