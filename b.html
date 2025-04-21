@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>/b/ - Бред</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>/b/ - Бред</h1>
+    <p>Абсолютно случайные обсуждения</p>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="o.html">/o/ - Общий</a>
+      <a href="b.html">/b/ - Бред</a>
+      <a href="r.html">/r/ - Рофлянчики</a>
+      <a href="m.html">/m/ - Мусор</a>
+      <a href="gm.html">/gm/ - Игры</a>
+      <a href="pol.html">/pol/ - Политика</a>
+      <a href="nw.html">/nw/ - Новости</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="post-form">
+      <form id="postForm">
+        <input type="text" id="name" placeholder="Имя (опционально)">
+        <textarea id="message" placeholder="Сообщение" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <div class="threads" id="threads"></div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+  <script src="app-b.js"></script>
+</body>
+</html>
